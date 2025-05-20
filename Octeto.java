@@ -17,4 +17,12 @@ public class Octeto {
     private void setValorDecimal(int valorDecimal) {
         this.valorDecimal = valorDecimal;
     }
+
+    public String transformarEmBinario() {
+        return String.format("%8s", Integer.toBinaryString(this.valorDecimal)).replace(' ', '0');
+    }
+
+    public String toString() {
+        return "" + this.getValorDecimal();
+    }
 }
